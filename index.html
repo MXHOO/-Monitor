@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="./echarts.min.js"></script>
+    <script src="jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="./index.css">
+    <title>在线授课监控平台</title>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <h3 style="text-align:center;margin-top: 0px;margin-bottom: 10px">在线授课监控平台</h3>
+        </div>
+        <div class="row center">
+            <div class="col-sm-3 col-xs-3" id="pie"></div>
+            <div class="col-sm-7  col-xs-7" id="line"></div>
+            <div class="col-sm-2  col-xs-2" id="tips">
+                <div style="height:20%"><center><h3>教师讲课速度指示灯</h3></center></div>
+                <div style="height: 80%">
+                     <div id="fast">
+                      <center> <img style="height: 20rem; width:20rem;" src="./fast.jpg" ></center>      
+                     <br>
+                     <center>讲课速度太快</center>   
+                    </div>
+                    <div id="slow"> 
+                      <center> <img style="height: 20rem; width:20rem;" src="./slow.jpg" ></center>      
+                     <br>
+                     <center>讲课速度太慢</center>   
+                    </div>
+                    <div id="normal"> 
+                        <center> <img style="height: 20rem; width:20rem;" src="./normal.jpg" ></center>      
+                       <br>
+                       <center>讲课速度适中</center>   
+                      </div>
+                </div>               
+            </div>
+        </div>
+        <div class="row bottom">
+            <div class="col-sm-6 col-xs-6" id="left_table">
+                <h4>学生点击实时数据</h4>
+                <table class="table table-hover">
+                    <tr>
+                        <th>学生编号 </th>
+                        <th>学生姓名 </th>
+                        <th>点击时间</th>
+                        <th>点击原因 </th>
+                    </tr>
+                    <tbody id="left_content">
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-sm-6 col-xs-6" id="right_table">
+                <h4>学生点击实时数据</h4>
+                <table class="table table-hover">
+                    <tr>
+                        <th>学生编号 </th>
+                        <th>学生姓名 </th>
+                        <th>点击时间</th>
+                        <th>点击原因 </th>
+                    </tr>
+                    <tbody id="right_content">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+  <script type="" src="./index.js"></script>
+</body>
+</html>

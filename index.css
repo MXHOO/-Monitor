@@ -1,0 +1,58 @@
+body {
+    margin: 0px
+}
+
+.container {
+
+    width: 100%;
+
+}
+
+.center>div {
+    height: 100%;
+}
+
+.top {
+    width: 100%;
+    height: 8%;
+}
+
+.center {
+    height: 40rem;
+}
+
+.bottom {
+   height:40rem;
+}
+#pie {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: groove;
+}
+
+#tips {
+    border: groove;
+}
+
+#line {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: groove;
+}
+
+#left_table {
+    border: groove;
+}
+
+#right_table {
+    border: groove;
+}
+
+th td {
+    align-items: center
+}
+
+h4 {
+    color: rgba(218, 183, 249, 1)
+}
+
